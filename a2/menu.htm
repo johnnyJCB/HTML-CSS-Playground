@@ -5,59 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaJam Coffee Bar Menu</title>
     <link rel="stylesheet" href="../a3/javajam.css"> 
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 <body>
     <div id="wrapper">
-    <header>
-        <h1>JavaJam Coffee Bar</h1>
-    </header>
-    
-    <nav>
-        <a href="home.htm">Home</a>&nbsp;&nbsp;&nbsp;
-        <a href="#menu">Menu</a>&nbsp;&nbsp;&nbsp;
-        <a href="../a4/music.htm">Music</a>&nbsp;&nbsp;&nbsp;
-        <a href="jobs.htm">Jobs</a>
-    </nav>
-
-    <main>
-        <img src="../a3/mugs.jpg" alt="Mugs" class="float-right">
-        
-        <h2>Coffee at JavaJam</h2>
-        
-
-        <p>Indulge in our locally roasted free-trade coffee and enjoy the aroma, the smooth taste, the caffeine! <br> 
+        <header>
+            <h1><a href="home.htm">JavaJam Coffee Bar</a></h1> <!-- Changed to hyperlink -->
+        </header>
+        <nav>
+            <ul>
+                <li><a href="home.htm">Home</a></li> <!-- Changed #home to home.htm -->
+                <li><a href="menu.htm">Menu</a></li>
+                <li><a href="../a4/music.htm">Music</a></li>
+                <li><a href="jobs.htm">Jobs</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="heromugs"></div> <!-- Removed img tag -->
+            <h2>Coffee at JavaJam</h2>
+            <p>Indulge in our locally roasted free-trade coffee and enjoy the aroma, the smooth taste, the caffeine! <br> 
             Join our Mug Club and get a 10% discount on each cup of coffee you purchase — ask the barista for details.</p>
+            
+            <section class="onethird"> <!-- Added section with class onethird -->
+                <h3>Just Java</h3>
+                <p>Regular house blend, decaffeinated coffee, or flavor of the day.</p>
+                <ul>
+                    <li>Endless Cup $3.50</li>
+                </ul>
+            </section>
+            
+            <section class="onethird"> <!-- Added section with class onethird -->
+                <h3>Cafe au Lait</h3>
+                <p>House blended coffee infused into a smooth, steamed milk.</p>
+                <ul>
+                    <li>Single $4.00</li>
+                    <li>Double $5.00</li>
+                </ul>
+            </section>
+            
+            <section class="onethird"> <!-- Added section with class onethird -->
+                <h3>Iced Cappuccino</h3>
+                <p>Sweetened espresso blended with icy-cold milk and served in a chilled glass.</p>
+                <ul>
+                    <li>Single $5.00</li>
+                    <li>Double $6.50</li>
+                </ul>
+            </section>
         
-            <h3>Just Java</h3>
-            <p>Regular house blend, decaffeinated coffee, or flavor of the day.</p>
-            <ul>
-                <li>Endless Cup $3.50</li>
-
-            </ul>
+        </main>
         
-            <h3>Cafe au Lait</h3>
-            <p>House blended coffee infused into a smooth, steamed milk.</p>
-            <ul>
-                <li>Single $4.00</li>
-                <li>Double $5.00</li>
-            </ul>
-        
-            <h3>Iced Cappuccino</h3>
-            <p>Sweetened espresso blended with icy-cold milk and served in a chilled glass.</p>
-            <ul>
-                <li>Single $5.00</li>
-                <li>Double $6.50</li>
-            </ul>
-        
-    </main>
-    
-    <footer>
-        &copy; 2020 JavaJam Coffee Bar<br>
-        Contact: <a href="mailto:johnnyc@aol.com">Johnny</a>
-    </footer>
-</div>
+        <footer>
+            &copy; 2020 JavaJam Coffee Bar<br>
+            Contact: <a href="mailto:johnnyc@aol.com">Johnny</a>
+        </footer>
+    </div>
 </body>
 </html>
+
 
 
 

@@ -1,7 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+header, nav, main, footer {
+    display: block;
+}
+
 body {
-    /* background-color: #fcebb6;
+    background-color: #fcebb6;
     color: #221811;
-    font-family: Verdana, Arial, sans-serif; */
+    font-family: Verdana, Arial, sans-serif;
     background-image: url("../a3/windingroad.jpg"); /* Adjust the path accordingly */
     background-size: cover;
     background-position: center;
@@ -11,29 +19,35 @@ body {
 header {
     background-color: #D2B48C;
     height: 150px;
-    background-image: url("javajamlogo.jpg");
+    background-image: url("javajamlogo.jpg"); /* Updated background image */
     background-repeat: no-repeat;
+    margin: 0;
+    padding-left: 240px; /* Adjusted padding */
 }
 
 h1 {
     padding-top: 45px;
-    padding-left: 220px;
     font-size: 3em; 
 }
 
-h2 {
-    color: #8C3826;
-}
-
 nav {
-    text-align: center;
     font-weight: bold;
     font-size: 1.5em; 
     padding-top: 10px; 
+    float: left; /* Fixed typo */
+    width: 200px;
+    text-align: center;
 }
 
 nav a {
     text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0 auto; /* Set margin to 0 auto to center the list */
+    width: fit-content;
 }
 
 footer {
@@ -50,46 +64,74 @@ h4 {
     font-size: 1.2em; 
     padding-left: 10px;
     padding-bottom: 5px; 
-}
-
-h3, dt {
-    color: #8C3826;
+    text-transform: uppercase;
+    clear: left; /* Added */
 }
 
 main {
-    padding: 0 2em 2em 2em; 
-    display: block; 
+    padding: 0;
+    margin-left: 200px;
+    background-color: #fef6c2;
+    overflow: auto; /* Added */
 }
 
-.details {
-    padding-left: 10%;
-    padding-right: 20%;
-}
-
-img {
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-img.float-right {
-    width: 100%;
-    max-width: 400px;
-    float: right;
-    margin-left: 20px;
-}
-
-#homehero {
-    height: 300px;
-    background-image: url("windingroad.jpg");
-    background-size: cover; 
+main h2, main h3, main h4, main p, main div, main ul, main dl {
+    padding-left: 3em;
+    padding-right: 2em;
 }
 
 #wrapper {
+    background-color: #231814;
     width: 80%;
-    margin-left:auto;
+    margin-left: auto;
     margin-right: auto;
-    background-color: #fef6c2;
     min-width: 900px;
     max-width: 1280px;
-    box-shadow: 3px 3px #666;
+    box-shadow: 3px 3px #666666;
+    padding: 0; /* Adjusted */
+}
+
+#heroroad {
+    background-image: url("windingroad.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+#heromugs {
+    background-image: url("mugs.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+#heroguitar {
+    background-image: url("heroguitar.jpg");
+    background-size: cover;
+    height: 250px;
+}
+
+.floatleft {
+    float: left;
+    padding: 20px;
+    padding-bottom: 20px;
+}
+
+.onethird {
+    float: left;
+    width: 33.33%;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: #fef6c2;
+}
+nav a:visited {
+    text-decoration: none;
+    color: #fff; /* Set color for unvisited and visited links #fef6c2 */
+}
+
+nav a:hover {
+    color: #fff; /* Set color for hover */
+    background-color: #231814; /* Set background color for hover */
 }

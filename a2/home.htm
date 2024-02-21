@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaJam Coffee Bar Homepage</title>
     <link rel="stylesheet" href="../a3/javajam.css"> 
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 <body>
     <div id="wrapper"><!-- #wrapper start -->
         <header>
-            <h1>JavaJam Coffee Bar</h1>
+            <h1><a href="home.htm">JavaJam Coffee Bar</a></h1> <!-- Changed to hyperlink -->
         </header>
         <nav>
-            <a href="#home">Home</a>&nbsp;&nbsp;&nbsp;
-            <a href="menu.htm">Menu</a>&nbsp;&nbsp;&nbsp;
-            <a href="../a4/music.htm">Music</a>&nbsp;&nbsp;&nbsp;
-            <a href="jobs.htm">Jobs</a>
+            <ul>
+                <li><a href="home.htm">Home</a></li> <!-- Changed #home to home.htm -->
+                <li><a href="menu.htm">Menu</a></li>
+                <li><a href="../a4/music.htm">Music</a></li>
+                <li><a href="jobs.htm">Jobs</a></li>
+            </ul>
         </nav>
-
         <main>
-
-            <img src="../a3/windingroad.jpg" alt="Winding Road" class="float-right">
-
+            <div id="heroroad"></div>
             <h2>Follow the Winding Road to JavaJam</h2> 
             <p>We’re a little out of the way, but take a drive in the country down Garrett Bay Road to JavaJam today! <br>
                 Indulge in our locally roasted free-trade coffee and home-made pastries. <br>
@@ -48,9 +50,9 @@
             Contact: <a href="mailto:johnnyc@aol.com">Johnny</a>
         </footer>
     </div> <!-- #wrapper close -->
-
 </body>
 </html>
+
 
 
 
