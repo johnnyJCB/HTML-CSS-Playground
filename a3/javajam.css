@@ -128,7 +128,7 @@ nav a:link {
 }
 nav a:visited {
     text-decoration: none;
-    color: #fff; /* Set color for unvisited and visited links #fef6c2 */
+    color: red; /* Set color for unvisited and visited links #fef6c2 */
 }
 
 nav a:hover {
