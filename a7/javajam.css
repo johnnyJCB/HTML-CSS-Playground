@@ -144,15 +144,17 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 1024px){
-    body {margin: 0;
+    body {
+        margin: 0;
         background-image: none;
     }
     #wrapper {
         width: auto;
         min-width: 0;
-        margin: 0;
+        margin: 0 auto; /* Center wrapper */
         padding: 0;
         box-shadow: none;
+        max-width: 1024px; /* Adjust max-width */
     }
     header{
         border-bottom: 5px solid #fef6c2;
@@ -199,6 +201,8 @@ nav a:hover {
     header{
         background-image: url("../a3/javajamlogo.jpg");
         height: 128px;
+        padding-left: 20px; /* Adjust padding */
+        padding-right: 20px; /* Adjust padding */
     }
     h1{
         font-size: 2em;
@@ -206,11 +210,14 @@ nav a:hover {
         padding-left: 0;
     }
     nav{
-        margin: 0;
+        margin: 0 auto; /* Center nav */
+        width: fit-content; /* Adjust width */
+        padding-left: 20px; /* Adjust padding */
+        padding-right: 20px; /* Adjust padding */
     }
     nav a{
         display: block;
-        padding: 0.2em;
+        padding: 0.5em; /* Adjust padding */
         width: auto;
         border-bottom: 1px solid #fef6c2;
     }
@@ -219,16 +226,18 @@ nav a:hover {
     }
     main{
         padding-top: 1px;
+        margin: 0 auto; /* Center main */
+        max-width: 768px; /* Adjust max-width */
     }
     h2{
-        padding: 0.5em 0 0 0.5em;
+        padding: 0.5em 0; /* Adjust padding */
         margin-right: 0.5em;
     }
     .details{
         padding-left: 0;
         padding-right: 0;
     }
-    #herorad, #heromugs, #heroguitar{
+    #heroroad, #heromugs, #heroguitar{
         background-image: none;
         height: auto;
     } 
