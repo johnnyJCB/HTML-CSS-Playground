@@ -72,7 +72,8 @@ main {
     padding: 0;
     margin-left: 200px;
     background-color: #fef6c2;
-    overflow: auto; 
+    overflow: auto;
+    padding-bottom: 60px; 
 }
 
 main h2, main h3, main h4, main p, main div, main ul, main dl {
@@ -142,7 +143,23 @@ nav a:hover {
 #desktop{
     display: inline;
 }
+table{
+    width: 90%;
+    margin: auto;
+    border-spacing: 0;
+    background-color: #ffc;
+}
+td {
+    padding: 10px;
+}
+th {
+    padding: 10px;
+}
+tr:nth-of-type(odd){
+    background-color: #D2B48C;
+}
 
+/* -------------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px){
     body {
         margin: 0;
@@ -195,8 +212,10 @@ nav a:hover {
         padding: 0;
         margin: 0;
         font-size: 90%;
+        padding-bottom: 30px;
     }
 }
+/* --------------------------------------------------------------------------------- */
 @media only screen and (max-width:768px){
     header{
         background-image: url("../a3/javajamlogo.jpg");
@@ -228,6 +247,7 @@ nav a:hover {
         padding-top: 1px;
         margin: 0 auto;
         max-width: 768px;
+        padding-bottom: 30px;
     }
     h2{
         padding: 0.5em 0; 
