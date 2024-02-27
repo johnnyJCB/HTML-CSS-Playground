@@ -197,58 +197,41 @@ nav a:hover {
         font-size: 90%;
     }
 }
-@media only screen and (max-width:768px){
-    header{
-        background-image: url("../a3/javajamlogo.jpg");
-        height: 128px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    h1{
-        font-size: 2em;
-        text-align: center;
-        padding-left: 0;
-    }
-    nav{
+@media only screen and (max-width:768px) {
+    nav {
         margin: 0 auto;
         width: fit-content;
-        padding-left: 20px; 
-        padding-right: 20px; 
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: bold;
+        font-size: 1.5em;
+        padding-top: 10px;
+        text-align: center;
     }
-    nav a{
+
+    nav ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0 auto; 
+        width: fit-content;
+    }
+
+    nav li {
+        display: block;
+        margin-bottom: 5px; /* Add some space between list items */
+        width: 100vw; /* Make each list item span the full width of the viewport */
+        /* background-color: hsl(60, 100%, 90%); */
+        background-color: orange;
+    }
+
+    nav a {
         display: block;
         padding: 0.5em;
         width: auto;
-        border-bottom: 1px solid #fef6c2;
+        text-decoration: none;
     }
-    nav li{
-        display: block;
-    }
-    main{
-        padding-top: 1px;
-        margin: 0 auto;
-        max-width: 768px;
-    }
-    h2{
-        padding: 0.5em 0; 
-        margin-right: 0.5em;
-    }
-    .details{
-        padding-left: 0;
-        padding-right: 0;
-    }
-    #heroroad, #heromugs, #heroguitar{
-        background-image: none;
-        height: auto;
-    } 
-    .floatleft{
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-    }
-    #mobile{
-        display: inline
-    }
-    #desktop{
-        display: none;
+
+    nav a:visited {
+        color: black; /* Set visited text color to black */
     }
 }
