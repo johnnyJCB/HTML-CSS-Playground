@@ -179,6 +179,10 @@ textarea{
 #mysubmit{
     margin-left: 9.5em;
 }
+audio{
+    display: block;
+    margin-top: 1em;
+}
 
 /* -------------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px){
