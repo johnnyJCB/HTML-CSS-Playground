@@ -126,7 +126,7 @@ main h2, main h3, main h4, main p, main div, main ul, main dl {
 
 nav a:link {
     text-decoration: none;
-    color: #D2B48C;
+    color: red;
 }
 nav a:visited {
     text-decoration: none;
